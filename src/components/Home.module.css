@@ -1,0 +1,120 @@
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* .one div:nth-child(1){
+  background-image: url("https://www.freeiconspng.com/thumbs/shoes-png/green-running-shoes-png-24.png");
+  background-repeat:no-repeat;
+  background-position: 95%;
+  background-size:50%;
+} */
+.onebtn{
+  z-index:1;
+  transition: all ease 0.5s;
+  overflow: hidden;
+}
+
+.onebtn::before {
+  position:absolute;
+  content:"";
+  width:100%;
+  height:100%;
+  background-color:blue;
+  left:-100%;
+  top:0;
+  z-index:-1;
+  transition: all ease 0.5s;
+}
+.onebtn:hover:before{
+  left:0;
+}
+.onebtn:hover{
+  color:white;
+}
+.onemain{
+  height:90vh;
+  padding:0 30px;
+}
+.homeimg{
+  width:50%;
+}
+.homedata{
+  width:50%;
+  margin-left: 40px;
+  padding:0 80px;
+  display: flex;
+  justify-content: center;
+  text-align: start;
+  flex-direction: column;
+}
+
+@media(max-width:843px){
+  .homeimg{
+    width:60%;
+    height:80%;
+  }
+  .homedata h2{
+     font-size: 22px;
+  }
+  .homedata h1{
+    font-size: 30px;
+    line-height: normal;
+  }
+  .homedata button{
+   font-size: 15px;
+   padding:5px 20px;
+
+  }
+}
+@media(max-width:451px){
+  .onemain{
+    height:70vh;
+    padding:0 10px;
+  }
+  .homeimg{
+    width:100%;
+    opacity: 0.6;
+  }
+  .homedata{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin: 0;
+    text-align: center;
+  }
+  .homedata h2{
+    color:black;
+  }
+  .homedata h1{
+    font-size: 35px;
+  }
+  .homedata button{
+    font-size: 18px;
+    padding:10px 25px;
+  }
+}

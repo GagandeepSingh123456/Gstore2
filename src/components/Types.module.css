@@ -1,0 +1,22 @@
+.hello:hover .helloimg{
+  scale:1.2;
+}
+.hellobtn:hover{
+  scale:1.1;
+  transition: all linear 0.1s;
+}
+.hello{
+  width:400px;
+}
+.typemain{
+  padding:56px;
+}
+
+@media(max-width:451px){
+  .typemain{
+    padding:40px 10px;
+  }
+  .hello{
+    width:600px;
+  }
+}

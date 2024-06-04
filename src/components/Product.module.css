@@ -1,0 +1,52 @@
+.color button:focus{
+  border:1px solid black;
+}
+.size button:focus{
+  background-color:rgb(207, 117, 239);
+}
+.promain{
+  gap:40px;
+  padding:80px 0;
+}
+.proimg{
+  width:600px;
+  height:800px;
+}
+.prodiv{
+  width:600px;
+  height:800px;
+  padding-left: 40px;
+}
+.prodiv h1{
+ margin-bottom: 8px;
+}
+.prodiv h2{
+  margin-bottom: 24px;
+}
+.prodiv p{
+  padding:30px 0;
+}
+
+@media(max-width:451px){
+  .promain{
+    padding:10px 10px;
+  }
+  .proimg{
+    width:600px;
+    height:600px;
+  }
+  .prodiv{
+    height:auto;
+    padding-left: 10px;
+  }
+  .prodiv h1{
+    margin:0;
+  }
+  .prodiv h2{
+    margin:0;
+  }
+  .prodiv p{
+    padding:0;
+  }
+  
+}

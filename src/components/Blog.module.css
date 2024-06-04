@@ -1,0 +1,27 @@
+.mainh1::before{
+  position:absolute;
+  content:"";
+  width: 100px;
+  height:3px;
+  top:15px;
+  left:560px;
+  background-color:black;
+}
+.mainh1::after{
+  position:absolute;
+  content:"";
+  width: 100px;
+  height:3px;
+  top:15px;
+  right:560px;
+  background-color:black;
+}
+.blogg{
+  width:400px;
+  height:270px;
+}
+@media(max-width:451px){
+  .blogg{
+    margin:0 10px 40px 10px;
+  }
+}
